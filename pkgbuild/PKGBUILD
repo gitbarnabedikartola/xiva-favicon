@@ -3,10 +3,10 @@ pkgver=1.00
 pkgrel=1
 arch=('any')
 license=('GPL')
-depends=('biglinux-session-and-themes')
+depends=('biglinux-session-and-themes' 'biglinux-livecd')
 url="https://github.com/gitbarnabedikartola/xiva-favicon"
 pkgdesc="favicons and wallpapers for xiva studio"
-source=("git+$https://github.com/gitbarnabedikartola/xiva-favicon.git")
+source=("git+https://github.com/gitbarnabedikartola/xiva-favicon.git")
 md5sums=(SKIP)
 
 package() {
