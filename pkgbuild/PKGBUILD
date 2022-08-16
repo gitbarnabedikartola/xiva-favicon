@@ -6,7 +6,7 @@ license=('GPL')
 depends=('biglinux-session-and-themes' 'biglinux-livecd')
 url="https://github.com/gitbarnabedikartola/xiva-favicon"
 pkgdesc="favicons and wallpapers for xiva studio"
-source=("git+$url.git")
+source=("git+$https://github.com/gitbarnabedikartola/xiva-favicon.git")
 md5sums=(SKIP)
 
 package() {
