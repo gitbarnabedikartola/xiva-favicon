@@ -5,6 +5,7 @@ pkgver=1.00
 pkgrel=1
 arch=('any')
 license=('GPL')
+depends=('biglinux-session-and-themes')
 url="https://github.com/gitbarnabedikartola/xiva-favicon"
 pkgdesc="favicons and wallpapers for xiva studio"
 source=("git+$url.git")
@@ -13,5 +14,3 @@ md5sums=(SKIP)
 package() {
     cp -r "${srcdir}/xiva-favicon/usr/" "${pkgdir}/"
 }
-
-
