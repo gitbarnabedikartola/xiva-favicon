@@ -4,3 +4,10 @@
 find /usr/share/biglinux/kdebiglinux -type f -exec sed -i 's/big-favicon.*/xiva-favicon/' {} +
 #troca wallpaper
 find /usr/share/biglinux/kdebiglinux -type f -exec sed -i 's/Image=file\:\/\/\/usr\/share\/wallpapers\/.*/Image=file\:\/\/\/usr\/share\/wallpapers\/xiva-wallpaper.png/' {} +
+#troca icone boot
+cp /usr/share/pixmaps/icon-logo-xivastudio.png  /usr/share/bigbashview/bcc/apps/boot-livecd/
+find /usr/share/bigbashview/bcc/apps/boot-livecd/ -type f -exec sed -i 's/icon-logo-biglinux.png/icon-logo-xivastudio.png/' {} +
+#troca icone do grub
+cp /usr/share/pixmaps/grub-xivastudio.png  /usr/share/grub/themes/biglinux/
+cp /usr/share/pixmaps/grub-icon-xivastudio.png  /usr/share/grub/themes/biglinux/icons/
+sed -i 's/biglinux.png/xivastudio.png/'  /usr/share/grub/themes/biglinux/theme.txt
