@@ -1,11 +1,9 @@
-# Maintainer: Bruno Goncalves <bigbruno@gmail.com>
-
 pkgname=xiva-favicon
 pkgver=1.00
 pkgrel=1
 arch=('any')
 license=('GPL')
-depends=('biglinux-session-and-themes')
+depends=('biglinux-session-and-themes' 'biglinux-livecd')
 url="https://github.com/gitbarnabedikartola/xiva-favicon"
 pkgdesc="favicons and wallpapers for xiva studio"
 source=("git+$url.git")

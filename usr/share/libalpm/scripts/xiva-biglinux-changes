@@ -8,6 +8,15 @@ find /usr/share/biglinux/kdebiglinux -type f -exec sed -i 's/Image=file\:\/\/\/u
 cp /usr/share/pixmaps/icon-logo-xivastudio.png  /usr/share/bigbashview/bcc/apps/boot-livecd/
 find /usr/share/bigbashview/bcc/apps/boot-livecd/ -type f -exec sed -i 's/icon-logo-biglinux.png/icon-logo-xivastudio.png/' {} +
 #troca icone do grub
-cp /usr/share/pixmaps/grub-xivastudio.png  /usr/share/grub/themes/biglinux/
-cp /usr/share/pixmaps/grub-icon-xivastudio.png  /usr/share/grub/themes/biglinux/icons/
+cp /usr/share/pixmaps/xivastudio-grub.png  /usr/share/grub/themes/biglinux/
+cp /usr/share/pixmaps/xivastudio-grub.png  /boot/grub/themes/biglinux/
+cp /usr/share/pixmaps/grub-icon-xivastudio.png  /usr/share/grub/themes/biglinux/icons/xivastudio.png
+cp /usr/share/pixmaps/grub-icon-xivastudio.png  /boot/grub/themes/biglinux/icons/xivastudio.png
 sed -i 's/biglinux.png/xivastudio.png/'  /usr/share/grub/themes/biglinux/theme.txt
+sed -i 's/biglinux.png/xivastudio.png/'  /boot/grub/themes/biglinux/theme.txt
+
+
+
+
+
+update-grub
